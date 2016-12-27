@@ -13,7 +13,7 @@ class ViewController: NSViewController {
 
     @IBOutlet weak var imageView: CropImageView!
     
-    private var pictureProvider = DesktopPicturesProvider()
+    fileprivate var pictureProvider = DesktopPicturesProvider()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,44 +21,38 @@ class ViewController: NSViewController {
         changeImage(nil)
     }
     
-    @IBAction func changeImage(sender: AnyObject?) {
+    @IBAction func changeImage(_ sender: AnyObject?) {
         imageView.image = pictureProvider.randomPicture
     }
     
     override func viewDidAppear() {
-        view.window?.backgroundColor = NSColor.whiteColor()
+        view.window?.backgroundColor = NSColor.white
         view.window?.statusBar.text = "Hello, world!"
         textField.stringValue = "Hello, world!"
-    }
-
-    override var representedObject: AnyObject? {
-        didSet {
-        // Update the view, if already loaded.
-        }
     }
 
     @IBOutlet weak var textField: NSTextField!
     @IBOutlet weak var stylePopUp: NSPopUpButton!
     @IBOutlet weak var backgroundColorWell: NSColorWell!
 
-    @IBAction func setText(sender: NSTextField) {
+    @IBAction func setText(_ sender: NSTextField) {
         view.window?.statusBar.text = textField.stringValue
     }
-    @IBAction func showForDefaultDuration(sender: NSButton) {
+    @IBAction func showForDefaultDuration(_ sender: NSButton) {
         view.window?.statusBar.show()
     }
-    @IBAction func showIndefinitely(sender: NSButton) {
+    @IBAction func showIndefinitely(_ sender: NSButton) {
         view.window?.statusBar.show(forDuration: 0.0)
     }
-    @IBAction func hide(sender: NSButton) {
+    @IBAction func hide(_ sender: NSButton) {
         view.window?.statusBar.hide()
     }
-    @IBAction func setStyle(sender: NSPopUpButton) {
-        guard let wantedStyle = stylePopUp.selectedItem?.title else { return }
+    @IBAction func setStyle(_ sender: NSPopUpButton) {
+        guard let wantedStyle = stylePopUp.selectedItem?.title.lowercased() else { return }
 
         view.window?.statusBar.style = GRStatusBarStyle(rawValue: wantedStyle)!
     }
-    @IBAction func setBackgroundColor(sender: NSColorWell) {
+    @IBAction func setBackgroundColor(_ sender: NSColorWell) {
         view.window?.statusBar.backgroundColor = backgroundColorWell.color
     }
 }

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18DB60F3E348C73C2000539F /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EA332DDD7686995C747B1D /* Pods.framework */; };
+		A8984F89D774FDA923210D46 /* Pods_GRStatusBar_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0331F82B93DAE10C9461C9C4 /* Pods_GRStatusBar_Demo.framework */; };
 		DD4D000F1C59B8CF00827ACB /* DesktopPicturesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4D000E1C59B8CF00827ACB /* DesktopPicturesProvider.swift */; };
 		DD4D00111C59BAFE00827ACB /* CropImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4D00101C59BAFE00827ACB /* CropImageView.swift */; };
 		DD4DFFCF1C59975200827ACB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4DFFCE1C59975200827ACB /* AppDelegate.swift */; };
@@ -30,8 +30,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0331F82B93DAE10C9461C9C4 /* Pods_GRStatusBar_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GRStatusBar_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		07EA332DDD7686995C747B1D /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		800DFDBF8036DC163DA40BD5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		9D1F87611FEAF79CA9701094 /* Pods-GRStatusBar Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GRStatusBar Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GRStatusBar Demo/Pods-GRStatusBar Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		D6F2FAF6BEF12A1F98674167 /* Pods-GRStatusBar Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GRStatusBar Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-GRStatusBar Demo/Pods-GRStatusBar Demo.release.xcconfig"; sourceTree = "<group>"; };
 		DD4D000E1C59B8CF00827ACB /* DesktopPicturesProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesktopPicturesProvider.swift; sourceTree = "<group>"; };
 		DD4D00101C59BAFE00827ACB /* CropImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropImageView.swift; sourceTree = "<group>"; };
 		DD4DFFCB1C59975200827ACB /* GRStatusBar Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GRStatusBar Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18DB60F3E348C73C2000539F /* Pods.framework in Frameworks */,
+				A8984F89D774FDA923210D46 /* Pods_GRStatusBar_Demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +63,8 @@
 			children = (
 				800DFDBF8036DC163DA40BD5 /* Pods.debug.xcconfig */,
 				E5982AB56FD5D9C4872B9574 /* Pods.release.xcconfig */,
+				9D1F87611FEAF79CA9701094 /* Pods-GRStatusBar Demo.debug.xcconfig */,
+				D6F2FAF6BEF12A1F98674167 /* Pods-GRStatusBar Demo.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -68,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				07EA332DDD7686995C747B1D /* Pods.framework */,
+				0331F82B93DAE10C9461C9C4 /* Pods_GRStatusBar_Demo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -111,13 +117,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD4DFFDA1C59975200827ACB /* Build configuration list for PBXNativeTarget "GRStatusBar Demo" */;
 			buildPhases = (
-				4A5529BFDE531B596EA8E24B /* Check Pods Manifest.lock */,
+				04675CBF12DE7836CD95B718 /* [CP] Check Pods Manifest.lock */,
 				DD4DFFC71C59975200827ACB /* Sources */,
 				DD4DFFC81C59975200827ACB /* Frameworks */,
 				DD4DFFC91C59975200827ACB /* Resources */,
 				DD4DFFFC1C59978100827ACB /* Embed Frameworks */,
-				2716175364F110ECE06090AB /* Embed Pods Frameworks */,
-				FA97612F864B3A20B0BFB60C /* Copy Pods Resources */,
+				4A89459CBFA1A98319DBE9B9 /* [CP] Embed Pods Frameworks */,
+				4EAE58D5FB4AF2C3301F4CC5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -135,11 +141,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Guilherme Rambo";
 				TargetAttributes = {
 					DD4DFFCA1C59975200827ACB = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0820;
 					};
 				};
 			};
@@ -174,49 +181,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2716175364F110ECE06090AB /* Embed Pods Frameworks */ = {
+		04675CBF12DE7836CD95B718 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		4A5529BFDE531B596EA8E24B /* Check Pods Manifest.lock */ = {
+		4A89459CBFA1A98319DBE9B9 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GRStatusBar Demo/Pods-GRStatusBar Demo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FA97612F864B3A20B0BFB60C /* Copy Pods Resources */ = {
+		4EAE58D5FB4AF2C3301F4CC5 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GRStatusBar Demo/Pods-GRStatusBar Demo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -260,8 +267,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -304,8 +313,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -324,12 +335,13 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
 		DD4DFFDB1C59975200827ACB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 800DFDBF8036DC163DA40BD5 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 9D1F87611FEAF79CA9701094 /* Pods-GRStatusBar Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -337,12 +349,13 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.guilhermerambo.GRStatusBar-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		DD4DFFDC1C59975200827ACB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E5982AB56FD5D9C4872B9574 /* Pods.release.xcconfig */;
+			baseConfigurationReference = D6F2FAF6BEF12A1F98674167 /* Pods-GRStatusBar Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -350,6 +363,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.guilhermerambo.GRStatusBar-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

@@ -10,14 +10,14 @@ import Cocoa
 
 class DesktopPicturesProvider {
     
-    private let desktopPicturesFolder = "/Library/Desktop Pictures"
-    private var desktopPictures = [String]()
+    fileprivate let desktopPicturesFolder = "/Library/Desktop Pictures"
+    fileprivate var desktopPictures = [String]()
     
     init() {
-        let enumerator = NSFileManager.defaultManager().enumeratorAtPath(desktopPicturesFolder)
+        let enumerator = FileManager.default.enumerator(atPath: desktopPicturesFolder)
         
         while let file = enumerator?.nextObject() as? NSString {
-            guard !file.containsString("thumbnail") else { continue }
+            guard !file.contains("thumbnail") else { continue }
             guard file.pathExtension == "jpg" else { continue }
             
             desktopPictures.append("\(desktopPicturesFolder)/\(file)")

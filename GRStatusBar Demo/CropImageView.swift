@@ -12,16 +12,16 @@ class CropImageView: NSView {
 
     var image: NSImage? {
         didSet {
-            setNeedsDisplayInRect(bounds)
+            setNeedsDisplay(bounds)
         }
     }
     
-    override func drawRect(dirtyRect: NSRect) {
-        super.drawRect(dirtyRect)
+    override func draw(_ dirtyRect: NSRect) {
+        super.draw(dirtyRect)
 
         guard let image = image else { return }
         
-        image.drawInRect(bounds, fromRect: bounds, operation: .CompositeSourceOver, fraction: 1.0)
+        image.draw(in: bounds, from: bounds, operation: .sourceOver, fraction: 1.0)
     }
     
 }
